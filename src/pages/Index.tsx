@@ -4,6 +4,9 @@ import Icon from "@/components/ui/icon";
 import Dashboard from "@/components/courier/Dashboard";
 import GeolocationTracker from "@/components/courier/GeolocationTracker";
 import ChatInterface from "@/components/courier/ChatInterface";
+import RatingReviews from "@/components/courier/RatingReviews";
+import ScheduleManager from "@/components/courier/ScheduleManager";
+import EarningsCalculator from "@/components/courier/EarningsCalculator";
 
 export default function Index() {
   const [activeTab, setActiveTab] = useState("dashboard");
@@ -102,42 +105,15 @@ export default function Index() {
           </TabsContent>
 
           <TabsContent value="rating">
-            <div className="text-center py-12">
-              <Icon
-                name="Star"
-                className="h-16 w-16 mx-auto mb-4 text-gray-300"
-              />
-              <h3 className="text-lg font-medium text-gray-900 mb-2">
-                Рейтинг и отзывы
-              </h3>
-              <p className="text-gray-500">Компонент в разработке</p>
-            </div>
+            <RatingReviews />
           </TabsContent>
 
           <TabsContent value="schedule">
-            <div className="text-center py-12">
-              <Icon
-                name="Calendar"
-                className="h-16 w-16 mx-auto mb-4 text-gray-300"
-              />
-              <h3 className="text-lg font-medium text-gray-900 mb-2">
-                Управление графиком
-              </h3>
-              <p className="text-gray-500">Компонент в разработке</p>
-            </div>
+            <ScheduleManager />
           </TabsContent>
 
           <TabsContent value="earnings">
-            <div className="text-center py-12">
-              <Icon
-                name="DollarSign"
-                className="h-16 w-16 mx-auto mb-4 text-gray-300"
-              />
-              <h3 className="text-lg font-medium text-gray-900 mb-2">
-                Калькулятор заработка
-              </h3>
-              <p className="text-gray-500">Компонент в разработке</p>
-            </div>
+            <EarningsCalculator />
           </TabsContent>
         </Tabs>
       </main>
