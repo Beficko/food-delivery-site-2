@@ -85,7 +85,7 @@ export default function Index() {
               <h3 className="text-lg font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-gray-400">
                 <p>📞Telegram +7 (999) 771 68 98</p>
-                <p>📧 hr@fastfood-delivery.ru</p>
+                <p>📧 hr@fastfoodpro.ru</p>
                 <p>📍 Санкт-Петербург</p>
               </div>
             </div>
