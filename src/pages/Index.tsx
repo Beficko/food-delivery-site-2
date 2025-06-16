@@ -27,7 +27,7 @@ export default function Index() {
                 <Icon name="Truck" className="h-6 w-6 text-white" />
               </div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-                FastFood Delivery(Партнер Яндекс Еда)
+                FastFood Delivery(Партнер "Яндекс Еда")
               </h1>
             </div>
             <Button
