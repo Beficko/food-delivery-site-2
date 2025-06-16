@@ -75,7 +75,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">
-                FastFood Delivery (Партнер Яндекс Еды)
+                FastFood Delivery (Партнер "Яндекс Еда")
               </h3>
               <p className="text-gray-400">
                 Лидер рынка доставки еды с лучшими условиями для курьеров
