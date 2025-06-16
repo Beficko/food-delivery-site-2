@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,11 +5,16 @@ import Icon from "@/components/ui/icon";
 import HeroSection from "@/components/recruitment/HeroSection";
 import BenefitsSection from "@/components/recruitment/BenefitsSection";
 import RequirementsSection from "@/components/recruitment/RequirementsSection";
-import ApplicationForm from "@/components/recruitment/ApplicationForm";
+
 import StatisticsSection from "@/components/recruitment/StatisticsSection";
 
 export default function Index() {
-  const [showForm, setShowForm] = useState(false);
+  const handleApplyClick = () => {
+    window.open(
+      "https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=2e3cca1f52c54a71aa714bc77a3d0948&utm_content=blank",
+      "_blank",
+    );
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -27,7 +31,7 @@ export default function Index() {
               </h1>
             </div>
             <Button
-              onClick={() => setShowForm(true)}
+              onClick={handleApplyClick}
               className="bg-orange-500 hover:bg-orange-600"
             >
               Подать заявку
@@ -38,7 +42,7 @@ export default function Index() {
 
       {/* Main Content */}
       <main>
-        <HeroSection onApplyClick={() => setShowForm(true)} />
+        <HeroSection onApplyClick={handleApplyClick} />
         <StatisticsSection />
         <BenefitsSection />
         <RequirementsSection />
@@ -55,7 +59,7 @@ export default function Index() {
             <Button
               size="lg"
               variant="secondary"
-              onClick={() => setShowForm(true)}
+              onClick={handleApplyClick}
               className="bg-white text-orange-500 hover:bg-orange-50"
             >
               <Icon name="UserPlus" className="mr-2 h-5 w-5" />
@@ -64,9 +68,6 @@ export default function Index() {
           </div>
         </section>
       </main>
-
-      {/* Application Form Modal */}
-      {showForm && <ApplicationForm onClose={() => setShowForm(false)} />}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

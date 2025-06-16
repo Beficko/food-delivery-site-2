@@ -27,7 +27,12 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                onClick={onApplyClick}
+                onClick={() =>
+                  window.open(
+                    "https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=2e3cca1f52c54a71aa714bc77a3d0948&utm_content=blank",
+                    "_blank",
+                  )
+                }
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3"
               >
                 <Icon name="Rocket" className="mr-2 h-5 w-5" />
