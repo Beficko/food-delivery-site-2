@@ -81,7 +81,7 @@ export default function Index() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-gray-400">
-                <p>📞 +7 (999) 123-45-67</p>
+                <p>📞 +7 (999) 7716898</p>
                 <p>📧 hr@fastfood-delivery.ru</p>
                 <p>📍 Москва, ул. Доставки, 1</p>
               </div>
