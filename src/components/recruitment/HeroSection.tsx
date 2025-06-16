@@ -33,14 +33,6 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
                 <Icon name="Rocket" className="mr-2 h-5 w-5" />
                 Подать заявку
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-3"
-              >
-                <Icon name="Play" className="mr-2 h-5 w-5" />
-                Смотреть видео
-              </Button>
             </div>
 
             <div className="flex items-center space-x-8 pt-4">
