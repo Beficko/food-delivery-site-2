@@ -86,7 +86,7 @@ export default function Index() {
               <div className="space-y-2 text-gray-400">
                 <p>📞Telegram +7 (999) 771 68 98</p>
                 <p>📧 hr@fastfood-delivery.ru</p>
-                <p>📍 Москва, ул. Доставки, 1</p>
+                <p>📍 Санкт-Петербург</p>
               </div>
             </div>
             <div>
